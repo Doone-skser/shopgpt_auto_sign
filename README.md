@@ -67,7 +67,7 @@ cp accounts.example.json accounts.json
 
 ## 定时任务
 
-每天 00:05 自动签到：
+macOS / Linux 通用，每天 00:05 自动签到：
 
 ```bash
 crontab -e
@@ -76,12 +76,14 @@ crontab -e
 写入：
 
 ```cron
-5 0 * * * /bin/zsh /绝对路径/shopgpt_auto_sign/run_sign.sh
+5 0 * * * /bin/bash /绝对路径/shopgpt_auto_sign/run_sign.sh
 ```
 
 日志在 `logs/sign-YYYYMMDD.log`。
 
-macOS 需保证机器在该时间点开机/唤醒；若任务不跑，检查 cron 的完全磁盘访问权限。
+说明：
+- 机器需在该时间点开机（或服务器常开）
+- macOS 若任务不跑，检查 cron 的完全磁盘访问权限
 
 ## 说明
 
