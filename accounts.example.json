@@ -1,0 +1,25 @@
+{
+  "benefit_id": 1,
+  "base_url": "https://shopgpt.plus",
+  "accounts": [
+    {
+      "username": "账号1",
+      "password": "密码1",
+      "enabled": true,
+      "note": "主号"
+    },
+    {
+      "username": "账号2",
+      "password": "密码2",
+      "enabled": true,
+      "benefit_id": 1,
+      "note": "小号"
+    },
+    {
+      "username": "账号3",
+      "password": "密码3",
+      "enabled": false,
+      "note": "暂时跳过"
+    }
+  ]
+}

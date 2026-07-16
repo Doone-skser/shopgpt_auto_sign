@@ -1,0 +1,25 @@
+# secrets & local state
+accounts.json
+cookies/
+logs/
+captcha.png
+shopgpt_cookies.json
+cookies.txt
+*.log
+
+# python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+.pytest_cache/
+
+# IDE / tools
+.cursor/
+.codegraph/
+.idea/
+.vscode/
+.DS_Store
